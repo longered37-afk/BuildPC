@@ -92,6 +92,12 @@ label{
     gap: 35px;
     margin:30px 0;
 }
+.imgdiv_for_index_html{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .burger{
     display:none;
     flex-direction: column;
@@ -115,6 +121,30 @@ label{
 .Theme{
     position:relative;
     z-index:999;
+}
+@media(max-width:1500px){
+    nav ul{
+        display:none;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--colorforheader);
+        right:0;
+        width:400px;
+        height:700px;
+        padding:10%;
+    }
+    nav ul.show{
+        display: flex;
+    }
+    .burger{
+        display:flex;
+        position: absolute;
+        right: 50px;
+    }   
+    .PCimages,.PCcomponents,.PCperifery{
+        width:400px;
+        height:400px;
+    }      
 }
 @media(max-width:768px){
     nav ul{
@@ -152,10 +182,4 @@ label{
         width: 350px;
         height: 350px;
     }
-}
-@media(max-width:1200px){
-    .PCimages,.PCcomponents,.PCperifery{
-        width:400px;
-        height:400px;
-    }      
 }

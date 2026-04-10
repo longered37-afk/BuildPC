@@ -72,16 +72,16 @@ label{
     display: flex;
     align-items: space-around;
 }
-.PCimages,.PCcomponents,.PCperifery{
+.PCcomponents,.PCperifery,.PCimages{
     width: 678px;
     height: 678px;
 }
-.PClist,.Periferylist{
+.PClist,.Periferylist,.BuildAlgoritmlist{
     display:flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     width:100%;
     padding:0% 25%;
     font-size:20px;
@@ -148,38 +148,22 @@ label{
 }
 @media(max-width:768px){
     nav ul{
-        display:none;
-        flex-direction: column;
-        position: absolute;
-        background-color: var(--colorforheader);
-        right:0;
-        width:300px;
-        height:300px;
-        padding:10%;
-    }
-    nav ul.show{
-        display: flex;
+        width:200px;
+        height:400px;
     }
     .PCimages,.PCcomponents,.PCperifery{
-    width: 280px;
-    height: 280px;
+        width: 280px;
+        height: 280px;
     }
     .imgdiv{
-        flex-direction: column;   
+        flex-direction: column;
+        gap: 15px;
     }
-    .burger{
-        display:flex;
-        position: absolute;
-        right: 50px;
-    }   
 }
 @media(max-width:548px){
 
-    .imgdiv{
-        flex-direction: column;
-    }
     .PCimages,.PCcomponents,.PCperifery{
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
     }
 }
